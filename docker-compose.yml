@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  api-alumnos:
+    build: ./Ingesta-api-alumnos
+    volumes:
+      - /home/ubuntu/.aws/credentials:/root/.aws/credentials
+
+  api-rockie:
+    build: ./Ingesta-api-rockie
+    volumes:
+      - /home/ubuntu/.aws/credentials:/root/.aws/credentials
+
+  api-tienda:
+    build: ./Ingesta-api-tienda
+    volumes:
+      - /home/ubuntu/.aws/credentials:/root/.aws/credentials
+
